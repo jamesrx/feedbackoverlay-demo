@@ -17,6 +17,17 @@ h3 {
   font-size: 16px;
 }
 
+#instructions {
+  list-style-type: disc;
+  max-width: 50%;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+#instructions li {
+  margin: 5px 0;
+}
+
 #current-url {
   margin-top: 35px;
   font-size: 14px;
