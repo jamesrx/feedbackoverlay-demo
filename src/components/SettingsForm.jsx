@@ -1,7 +1,7 @@
 import React from 'react';
 import DateField from './DateField';
 import Checkbox from './Checkbox';
-import { chrome } from '../demoStubs';
+import { chrome } from '../stubs/demoStubs';
 
 class SettingsForm extends React.Component {
   constructor(props) {

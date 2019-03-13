@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import SettingsForm from './components/SettingsForm';
 import FeedbackOverlay from './components/FeedbackOverlay';
-import * as stubs from './demoStubs';
+import * as stubs from './stubs/demoStubs';
 
 const settingsForm = document.getElementById('settings-form-root');
 ReactDOM.render(<SettingsForm />, settingsForm);

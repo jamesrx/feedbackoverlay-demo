@@ -1,7 +1,7 @@
 import React from 'react';
 import Thumb from './Thumb';
 import style from '../styles/FeedbackOverlay.scss';
-import { chrome, location, queryData } from '../demoStubs';
+import { chrome, location, queryData } from '../stubs/demoStubs';
 
 class FeedbackOverlay extends React.Component {
   constructor(props) {
