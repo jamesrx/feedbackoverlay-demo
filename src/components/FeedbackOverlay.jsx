@@ -72,7 +72,7 @@ class FeedbackOverlay extends React.Component {
       // if request has been done before, use data from cache
       this.parseFeedback(cachedRequest);
     } else {
-      fetch(`/fakeData.json${queryString}`)
+      fetch(`fakeData.json${queryString}`)
         .then(response => response.json())
         .then(data => queryData(data, queryString)) // use this function to emulate a real DB query
         .then((data) => {
