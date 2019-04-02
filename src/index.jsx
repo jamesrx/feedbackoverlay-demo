@@ -7,13 +7,14 @@ import * as stubs from './stubs/demoStubs';
 const settingsForm = document.getElementById('settings-form-root');
 ReactDOM.render(<SettingsForm />, settingsForm);
 
+const sampleUrlEl = document.getElementById('sample-url');
 const feedbackOverlay = document.getElementById('feedback-overlay-root');
 
 const urlClickHandler = function urlClickHandler(e) {
   if (e.target.classList.contains('url')) {
     ReactDOM.unmountComponentAtNode(feedbackOverlay);
     stubs.location.pathname = e.target.innerText;
-    document.getElementById('sample-url').innerText = stubs.location.pathname;
+    sampleUrlEl.innerText = stubs.location.pathname;
     ReactDOM.render(<FeedbackOverlay />, feedbackOverlay);
   }
 };
